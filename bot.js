@@ -5,9 +5,10 @@ var botID = process.env.BOT_ID;
 
 function respond() {
   var request = JSON.parse(this.req.chunks[0]),
-      botRegex = /fuck/;
+      botRegex = /fuck/,
+      capitalFuck = /Fuck/;
 
-  if(request.text && botRegex.test(request.text)) {
+  if(request.text && botRegex.test(request.text) || capitalFuck.test(request.text)) {
     this.res.writeHead(200);
     postMessage();
     this.res.end();
