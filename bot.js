@@ -1,5 +1,5 @@
 var HTTPS = require('https');
-var cool = woowoo;
+var cool = postMessage(hey);
 
 var botID = process.env.BOT_ID;
 
