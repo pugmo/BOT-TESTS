@@ -16,6 +16,7 @@ function respond() {
     this.res.writeHead(200);
     this.res.end();
   }
+}
 
 function postMessage() {
   var botResponse, options, body, botReq;
